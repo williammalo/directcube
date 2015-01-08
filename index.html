@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  William Malo</title>
+
+  <style>
+  * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#experiment {
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+  -ms-perspective-origin: 50% 100px;
+  perspective-origin: 50% 100px;
+}
+#cube {
+  position: relative;
+  margin: 50px auto;
+  height: 200px;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 100px 100px 0px;
+  -ms-transform-origin: 100px 100px 0px;
+  transform-origin: 100px 100px 0px;
+  font-family: sans-serif;
+  font-size: 91px;
+  line-height: 91px;
+}
+.sp {
+  letter-spacing: 20px;
+  font-size: 110px;
+  font-weight: bold;
+}
+.face {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  background-color: #009600;
+}
+#cube .one {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -ms-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+}
+#cube .two {
+  -webkit-transform: translateZ(100px);
+  -ms-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -ms-transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
+}
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  -ms-transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(100px);
+}
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -ms-transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -ms-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+.four,
+.five {
+  color: #fff;
+}
+.one {
+  background: #000;
+  border: solid 20px #009600;
+}
+
+  </style>
+
+  <script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+  </script>
+
+</head>
+
+<body>
+
+<div id="experiment">
+  <div id="cube">
+    <div class="face one"></div>
+    <div class="face two">DIR<br/>
+      <div class="sp">CU</div>
+    </div>
+    <div class="face three">ECT<br/>
+      <div class="sp">BE</div>
+    </div>
+    <div class="face four">DIR<br/>
+      <div class="sp">CU</div>
+    </div>
+    <div class="face five">ECT<br/>
+      <div class="sp">BE</div>
+    </div>
+    <div class="face six"></div>
+  </div>
+</div>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+  <script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout-6c99970ade81e43be51fa877be0f7600.js"></script>
+
+    <script src="http://assets.codepen.io/assets/libs/traceur-runtime-11b88a882417b1783c68bc6fc3253817.js"></script>
+
+  <script>
+    "use strict";
+var cube = document.getElementById("cube");
+var bla = 360;
+var anim = function() {
+  bla -= 1;
+  bla %= 360;
+  cube.style.webkitTransform = "rotateX(-20deg) rotateY(" + bla + "deg)";
+  cube.style.mozTransform = "rotateY(" + bla + "deg)";
+  cube.style.transform = "rotateY(" + bla + "deg)";
+  window.requestAnimationFrame(anim);
+};
+anim();
+    //@ sourceURL=pen.js
+  </script>
