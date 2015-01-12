@@ -170,8 +170,8 @@ var anim = function() {
   bla -= 1;
   bla %= 360;
   cube.style.webkitTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
-  cube.style.mozTransform = "rotateY(" + bla + "deg)";
-  cube.style.transform = "rotateY(" + bla + "deg)";
+  cube.style.mozTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
+  cube.style.transform = "rotateX(-25deg) rotateY(" + bla + "deg)";
   window.requestAnimationFrame(anim);
 };
 anim();
