@@ -118,7 +118,13 @@ hr {
 .spacer {
   height: 1.4em;
 }
+#banner{
+  position:absolute;
+  top:0;
+  left:50%;
+  margin-left:200px;
 
+}
   </style>
 
   <script>
@@ -153,7 +159,7 @@ hr {
 <div class="spacer"></div>
 <div class="spacer"></div>
 <p></p>
-
+<img id=banner src=banner.png>
   <script>
     if (document.location.search.match(/type=embed/gi)) {
       window.parent.postMessage('resize', "*");
