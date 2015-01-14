@@ -34,9 +34,6 @@ html {
   -ms-perspective-origin: 50% 100px;
   perspective-origin: 50% 100px;
 }
-a {
-  color: #000;
-}
 #cube {
   position: relative;
   margin: 70px auto;
@@ -137,9 +134,14 @@ hr {
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@media (max-width: 300px) {
-  html {
-    background: #f00;
+@media (max-width: 647px) {
+  #cube {
+    margin: 70px;
+    margin-bottom: 115px;
+  }
+  #banner {
+    left: 160px;
+    margin-left: 200px;
   }
 }
 @-webkit-keyframes bounceInDown {
@@ -247,7 +249,7 @@ hr {
 
 <body>
 
-<meta name=viewport content="width=500, initial-scale=1">
+<meta name=viewport content="width=492, initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 <div id="experiment"><img id="ielogo" src="http://direct-cube.com/ielogo.png" style="display:none"/>
   <div id="cube">
