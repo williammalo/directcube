@@ -23,8 +23,9 @@
 
 <body>
 
-<meta name=viewport content="width=492, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<div class=pagewrap>
 <div class="view"><img id="ielogo" src="http://direct-cube.com/ielogo.png" style="display:none"/>
   <div class="cubestage">
   <div class="cube innercube">
@@ -44,14 +45,19 @@
   </div>
 </div>
 </div>
+
+<div class=content>
 <p class="title"><span>Entreposage Mobile</span></p>
 <!--hr-->
 <p class="title"><span>Mobile Storage</span></p>
-<div class="spacer"></div>
 <p class="title big"><span>888 883-6137</span></p>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<p></p><img id="banner" src="http://direct-cube.com/banner.png"/>
+</div>
+
+</div>
+
+
+<div class="bigspacer"></div>
+<img id="banner" src="http://direct-cube.com/banner.png"/>
 
   <script>
     if (document.location.search.match(/type=embed/gi)) {
@@ -64,7 +70,55 @@
     <script src="http://assets.codepen.io/assets/libs/traceur-runtime-11b88a882417b1783c68bc6fc3253817.js"></script>
 
   <script>
-    "use strict";
+  if (!document.getElementsByClassName) {
+  document.getElementsByClassName = function(search) {
+    var d = document, elements, pattern, i, results = [];
+    if (d.querySelectorAll) { // IE8
+      return d.querySelectorAll("." + search);
+    }
+    if (d.evaluate) { // IE6, IE7
+      pattern = ".//*[contains(concat(' ', @class, ' '), ' " + search + " ')]";
+      elements = d.evaluate(pattern, d, null, 0, null);
+      while ((i = elements.iterateNext())) {
+        results.push(i);
+      }
+    } else {
+      elements = d.getElementsByTagName("*");
+      pattern = new RegExp("(^|\\s)" + search + "(\\s|$)");
+      for (i = 0; i < elements.length; i++) {
+        if ( pattern.test(elements[i].className) ) {
+          results.push(elements[i]);
+        }
+      }
+    }
+    return results;
+  }
+}
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
 var cube = document.getElementsByClassName("cubestage")[0];
 var bla = 360;
 var anim = function() {

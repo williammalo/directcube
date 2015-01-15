@@ -4,18 +4,30 @@
 }
 html {
   background-color: #64dc34;
+  background:#fff url(compressed.jpg) bottom no-repeat;
+  background-size:100%;
   font-family: "Helvetica Neue", Helvetica, Arial, 'Raleway', sans-serif;
 }
+body
+  margin:0
 a{
   color:black;
 }
+.content
+  display:inline-block
+  vertical-align:middle
+  margin-left:10%
+.pagewrap
+  padding: 2em 10%
 .view {
+  display:inline-block
+  vertical-align:middle
   font-size:20px
   perspective: 40em;
   perspective-origin: 50% 5em;
   position: relative;
-  margin: 70px auto;
-  margin-bottom: 115px;
+  margin: 1.9em 2.7em;
+  margin-bottom:3.5em;
   height: 10em;
   width:10em;
 }
@@ -104,9 +116,8 @@ a{
   border: solid 1em #000;
 }
 .title {
-  margin: 0.4em;
+  margin: 0.4em 0;
   font-weight: bold;
-  text-align: center;
   font-size: 2em;
   line-height: 1em;
 }
@@ -122,26 +133,65 @@ hr {
 .spacer {
   height: 1.4em;
 }
+.bigspacer {
+  margin-bottom: 40%;
+}
 #banner {
   position: absolute;
   top: -25px;
-  left: 50%;
-  margin-left: 200px;
+  right: 2em;
+  margin-left: 700px;
   width: 100px;
   animation-name: bounceInDown;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-@media (max-width: 647px) {
-  .view {
-    margin: 70px;
-    margin-bottom: 115px;
-  }
-  #banner {
-    left: 160px;
-    margin-left: 200px;
-  }
-}
+
+@media (max-width: 1131px) 
+  .pagewrap
+    padding:2em
+  .content
+    margin-left 2em
+@media (max-width: 911px)
+  .view
+    font-size:18px
+@media (max-width: 882px)
+  .view
+    font-size: inherit
+@media (max-width: 851px)
+  html
+    font-size:14px
+@media (max-width: 745px)
+  html
+    font-size:16px
+  .content,.view
+    text-align:center
+    display:block
+    margin-left:auto
+    margin-right:auto
+  .content
+    padding-top:2em
+@media (max-width: 570px)
+  html
+    font-size:14px
+@media (max-width: 540px)
+  html
+    font-size:16px
+  .view
+    margin: 1.9em 2.7em;
+    margin-bottom:3.5em;
+@media (max-width: 490px)
+  html
+    font-size:14px
+@media (max-width: 412px)
+  html
+    font-size:12px
+@media (max-width: 358px)
+  #banner
+    width:80px
+@media (max-width: 339px)
+  html
+    font-size:10px
 @keyframes bounceInDown {
   0%, 60%, 75%, 90%, 100% {
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

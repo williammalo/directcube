@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 998457,
+		"inputAbbreviatedPath": "\/bg.jpg",
+		"outputAbbreviatedPath": "\/bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/ielogo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -57,6 +68,39 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
+		},
+	"\/uncompressed copy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.84046e+06,
+		"inputAbbreviatedPath": "\/uncompressed copy.jpg",
+		"outputAbbreviatedPath": "\/uncompressed copy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uncompressed.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.84046e+06,
+		"inputAbbreviatedPath": "\/uncompressed.jpg",
+		"outputAbbreviatedPath": "\/uncompressed.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/uncompressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.8919e+06,
+		"inputAbbreviatedPath": "\/uncompressed.png",
+		"outputAbbreviatedPath": "\/uncompressed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [
