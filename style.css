@@ -69,7 +69,8 @@ a {
 }
 #ielogo {
   display: block;
-  margin: 70px auto;
+  height: 10em;
+  width: 10em;
 }
 .face {
   position: absolute;
