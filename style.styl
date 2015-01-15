@@ -6,8 +6,12 @@ html {
   background-color: #64dc34;
   background:#fff url(compressed.jpg) bottom no-repeat;
   background-size:100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, 'Raleway', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, 'Raleway', sans-serif
 }
+
+html.ie
+  background:#fff
+
 body
   margin:0
 html,body
@@ -15,6 +19,16 @@ html,body
 a{
   color:black;
 }
+#bg
+  display:none
+.ie #bg
+  display:block
+  width:100%
+  position:absolute
+  bottom:0
+  left:0
+  z-index:-1
+
 .content
   display:inline-block
   vertical-align:middle
