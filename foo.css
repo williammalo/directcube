@@ -177,7 +177,8 @@ h5 {
 .logo {
   display: block;
   margin: 0 auto;
-  width: 150px;
+  width: 9.375em;
+  height: 9.375em;
 }
 .headerimg {
   display: block;
@@ -196,4 +197,37 @@ h2:last-child {
 .bottom {
   display: block;
   width: 100%;
+}
+@media (max-width: 1012px) {
+  h1 {
+    width: 9em;
+    margin-top: 0.55em;
+  }
+}
+@media (max-width: 733px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 647px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 543px) {
+  .third,
+  .two-thirds {
+    display: block;
+    width: 100%;
+  }
+  .row {
+    padding-top: 0;
+  }
+  .contrast {
+    background: #fff;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
