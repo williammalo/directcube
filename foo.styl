@@ -1,0 +1,146 @@
+varLineHeight=1.375em
+phi=1.618
+varMargin=varLineHeight*2
+
+//grid
+
+*
+  box-sizing:border-box
+.pad
+  padding:varLineHeight //make sure it doesnt break the baseline grid!
+.half,.third,.two-thirds,.fourth,.three-fourths
+  float:left
+.half
+  width:50%
+.third
+  width:33.33%
+.two-thirds
+  width:66.66%
+.fourth
+  width:25%
+.three-fourths
+  width:75%
+.row:after
+  content: ""
+  display: table
+  clear: both
+
+//type
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+*
+  text-rendering: optimizeLegibility;
+  font-feature-settings:"kern", "liga", "dlig" ,"frac";
+
+html,button,input
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif
+
+html
+  min-height:100%
+  background:linear-gradient(to top,#fff 0% ,#fff 90%,#64dc34 100%) .5em .5em;
+  background:white
+  background-size:contain
+  //padding-top:varLineHeight+2em
+  font-size:16px;
+  line-height:varLineHeight;
+  background-size:100% varLineHeight;
+  color:rgba(0,0,0,.9)
+  color:#2e3436
+
+body{
+  margin:0;
+}
+
+small,strong,i,b{line-height:1}
+
+p,ul,ol,code{padding:0;margin:0;margin-bottom:varLineHeight}
+p:last-child,ul:last-child,ol:last-child,code:last-child{margin:0}
+
+p{hyphens: auto;text-align:justify}
+
+ul,ol{padding-left:1.1em}
+
+/*headings (you should never use > 4 levels of headings)*/
+
+h1,h2,h3,h4{margin:0;position:relative;}
+
+h1{font-size:3.3em;line-height:varLineHeight*(2/3.3);top:-.02em;}
+h2{font-size:1.618em;  top:-.12em}
+h3{font-size:1.3em; top:-.1em}
+h4{font-size:1em}
+
+a{
+  color: #64dc34
+  text-decoration:underline;
+  text-decoration-skip: ink;
+  //background:linear-gradient(to top,#fff 0% ,#fff 93.75%,#64dc34 93.75%,#64dc34 100%)  0 1em;
+  //text-shadow:-1px 1px 0 #fff,1px 1px 0 #fff,-1px 0 0 #fff,1px 0 0 #fff, 0 -1px #fff
+}
+mark{
+  background:rgba(255,220,0,.5);
+}
+
+::selection{background:rgba(#64dc34,.15)}
+
+iframe
+  box-shadow: 0 0 .5em rgba(0,0,0,0.1)
+  border: solid .5em #fff
+  height: varLineHeight*7
+
+button
+  font-size:1em
+  background:#64dc34
+  color:#fff
+  border-radius:4px
+  border:0
+  padding: (varLineHeight/2)
+
+nav
+  background:#64dc34
+  width:100%
+  display:block
+  position:fixed
+  top:0
+  left:0
+  padding:0 varLineHeight
+  box-shadow: 0 0 .5em rgba(0,0,0,0.1)
+nav a
+  display:inline-block
+  color:white
+  text-decoration:none
+  background:none
+  text-shadow:none
+  padding:.5em varLineHeight
+  font-weight:bold
+
+
+//main
+.content
+  padding:varLineHeight;
+.content:after
+  content: ""
+  display: table
+  clear: both
+
+
+h1,h2,h3,h4,h5
+  text-transform: uppercase;
+
+.logo
+  display:block
+  margin:0 auto
+  width:150px
+.headerimg
+  display:block
+  margin:auto
+  margin-bottom:varMargin
+h1
+  margin-top:1em
+.contrast
+  background:#eee
+h2:last-child
+  text-align:center
+.bottom
+  display:block
+  width:100%
