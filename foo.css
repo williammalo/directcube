@@ -131,6 +131,8 @@ iframe {
   box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
   border: solid 0.5em #fff;
   height: 9.625em;
+  width: 100%;
+  min-width: 316px;
 }
 button {
   font-size: 1em;
