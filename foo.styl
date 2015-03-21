@@ -1,3 +1,27 @@
+
+colorMainDark=#51cb20
+colorMain=#64dc34
+colorMainLight=#c2f970
+
+
+colorText=#2a2b2e
+colorTextLight=#7e8d85 //medium gray
+colorTextLighter=#b3bfb8 //light grey
+colorTextLightest=#e8ebe4 //lighter grey
+
+colorOrg0=#3c493f //halfway between main and text #386150
+
+brandBlue=#016fb9
+brandCyan=#22aed1
+brandCream=#eaefd3
+brandRed=#c52233
+brandNavy=#3a506b
+brandYellow=#f7f052
+brandOrange=#f28123
+
+
+
+
 varLineHeight=1.375em
 phi=1.618
 varMargin=varLineHeight*2
@@ -35,10 +59,10 @@ varMargin=varLineHeight*2
 
 html,button,input
   font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif
-
+  color:colorText
 html
   min-height:100%
-  background:linear-gradient(to top,#fff 0% ,#fff 90%,#64dc34 100%) .5em .5em;
+  background:linear-gradient(to top,#fff 0% ,#fff 90%,colorMain 100%) .5em .5em;
   background:white
   background-size:contain
   //padding-top:varLineHeight+2em
@@ -46,7 +70,7 @@ html
   line-height:varLineHeight;
   background-size:100% varLineHeight;
   color:rgba(0,0,0,.9)
-  color:#2e3436
+  color:colorText
 
 body{
   margin:0;
@@ -71,35 +95,38 @@ h3{font-size:1.3em; top:-.1em}
 h4{font-size:1em}
 
 a{
-  color: #64dc34
+  color: colorMainDark
   text-decoration:underline;
   text-decoration-skip: ink;
-  //background:linear-gradient(to top,#fff 0% ,#fff 93.75%,#64dc34 93.75%,#64dc34 100%)  0 1em;
+  //background:linear-gradient(to top,#fff 0% ,#fff 93.75%,colorMain 93.75%,colorMain 100%)  0 1em;
   //text-shadow:-1px 1px 0 #fff,1px 1px 0 #fff,-1px 0 0 #fff,1px 0 0 #fff, 0 -1px #fff
 }
 mark{
   background:rgba(255,220,0,.5);
 }
 
-::selection{background:rgba(#64dc34,.15)}
+::selection{background:rgba(colorMain,.15)}
 
 iframe
-  box-shadow: 0 0 .5em rgba(0,0,0,0.1)
+  //box-shadow: 0 0 .5em rgba(0,0,0,0.1)
   border: solid .5em #fff
   height: varLineHeight*7
   width: 100%
   min-width:316px
+@media(max-width:383px)
+  iframe
+    min-width:100%
 
 button
   font-size:1em
-  background:#64dc34
+  background:colorMainDark
   color:#fff
   border-radius:4px
   border:0
   padding: (varLineHeight/2)
 
 nav
-  background:#64dc34
+  background:colorMain
   width:100%
   display:block
   position:fixed
@@ -116,7 +143,6 @@ nav a
   padding:.5em varLineHeight
   font-weight:bold
 
-
 //main
 .content
   padding:varLineHeight;
@@ -126,6 +152,9 @@ nav a
   clear: both
 
 
+.row:nth-of-type(2n)
+  background:lighten(colorTextLightest,60%)
+  //background: lighten(colorMainLight,70%)
 h1,h2,h3,h4,h5
   text-transform: uppercase;
 
@@ -140,14 +169,35 @@ h1,h2,h3,h4,h5
   margin-bottom:varMargin
 h1
   margin-top:1em
-.contrast
-  background:#eee
 h2:last-child
   text-align:center
 .bottom
   display:block
   width:100%
 
+table
+  width:100%
+td
+  padding:varLineHeight*0.45
+  border: solid varLineHeight*0.05 #fff
+  background: lighten(colorTextLightest,50%)
+td.light
+  background:#fff
+td.em
+  background: lighten(colorMainLight,70%)
+@media(max-width:532px)
+  td
+    padding:varLineHeight*0.2
+    border: solid varLineHeight*0.05 #fff
+@media(max-width:504px)
+  .scroller
+    width:100%
+    overflow:scroll
+.color
+  background:#fff //colorMainLight
+@media(max-width:985px)
+  .wide-content
+    width:100%
 @media(max-width:1012px)
   h1 
     width:9em

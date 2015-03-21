@@ -24,6 +24,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1211,
+		"inputAbbreviatedPath": "\/bg.png",
+		"outputAbbreviatedPath": "\/bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bgcorner.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1500,
+		"inputAbbreviatedPath": "\/bgcorner.png",
+		"outputAbbreviatedPath": "\/bgcorner.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/bottom1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -64,6 +86,17 @@
 		"initialSize": 3005,
 		"inputAbbreviatedPath": "\/expedition.png",
 		"outputAbbreviatedPath": "\/expedition.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fancy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.3177e+06,
+		"inputAbbreviatedPath": "\/fancy.png",
+		"outputAbbreviatedPath": "\/fancy.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -131,6 +164,17 @@
 		"initialSize": 2665,
 		"inputAbbreviatedPath": "\/livraison.png",
 		"outputAbbreviatedPath": "\/livraison.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18982,
+		"inputAbbreviatedPath": "\/logo.png",
+		"outputAbbreviatedPath": "\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

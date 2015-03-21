@@ -42,6 +42,7 @@ html,
 button,
 input {
   font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2a2b2e;
 }
 html {
   min-height: 100%;
@@ -53,7 +54,7 @@ html {
   line-height: 1.375em;
   background-size: 100% 1.375em;
   color: rgba(0,0,0,0.9);
-  color: #2e3436;
+  color: #2a2b2e;
 }
 body {
   margin: 0;
@@ -114,7 +115,7 @@ h4 {
   font-size: 1em;
 }
 a {
-  color: #64dc34;
+  color: #51cb20;
   text-decoration: underline;
   text-decoration-skip: ink;
 }
@@ -128,15 +129,19 @@ mark {
   background: rgba(100,220,52,0.15);
 }
 iframe {
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
   border: solid 0.5em #fff;
   height: 9.625em;
   width: 100%;
   min-width: 316px;
 }
+@media (max-width: 383px) {
+  iframe {
+    min-width: 100%;
+  }
+}
 button {
   font-size: 1em;
-  background: #64dc34;
+  background: #51cb20;
   color: #fff;
   border-radius: 4px;
   border: 0;
@@ -169,6 +174,9 @@ nav a {
   display: table;
   clear: both;
 }
+.row:nth-of-type(2n) {
+  background: #f6f7f4;
+}
 h1,
 h2,
 h3,
@@ -190,15 +198,46 @@ h5 {
 h1 {
   margin-top: 1em;
 }
-.contrast {
-  background: #eee;
-}
 h2:last-child {
   text-align: center;
 }
 .bottom {
   display: block;
   width: 100%;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 0.61875em;
+  border: solid 0.06875em #fff;
+  background: #f3f5f2;
+}
+td.light {
+  background: #fff;
+}
+td.em {
+  background: #edfdd4;
+}
+@media (max-width: 532px) {
+  td {
+    padding: 0.275em;
+    border: solid 0.06875em #fff;
+  }
+}
+@media (max-width: 504px) {
+  .scroller {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+.color {
+  background: #fff;
+}
+@media (max-width: 985px) {
+  .wide-content {
+    width: 100%;
+  }
 }
 @media (max-width: 1012px) {
   h1 {
