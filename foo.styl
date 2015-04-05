@@ -81,7 +81,7 @@ small,strong,i,b{line-height:1}
 p,ul,ol,code{padding:0;margin:0;margin-bottom:varLineHeight}
 p:last-child,ul:last-child,ol:last-child,code:last-child{margin:0}
 
-p{hyphens: auto;text-align:justify}
+p{hyphens: auto;}
 
 ul,ol{padding-left:1.1em}
 
@@ -201,7 +201,7 @@ td.em
     width:100%
     overflow:scroll
 .color
-  background:#fff //colorMainLight
+  background:colorMain
 @media(max-width:985px)
   .wide-content
     width:100%
@@ -216,7 +216,7 @@ td.em
     html
       font-size:12px
 @media(max-width:543px)
-  .third,.two-thirds
+  .third,.two-thirds,.half
     display:block
     width:100%
   .row
@@ -226,6 +226,8 @@ td.em
   h1
     width:100%
     text-align:center
+  html
+    font-size:16px
 
 @media(min-width:1450px)
   html
