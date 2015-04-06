@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class=ie>
+<![endif]-->
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>DIRECT CUBE</title>
+
+  <link rel=stylesheet href=style.css>
+
+  <script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+  </script>
+
+</head>
+
+<body>
+
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<img id=bg src="compressed.jpg">
+<div class=pagewrap>
+<div class="view"><img id="ielogo" src="http://direct-cube.com/ielogo.png" style="display:none"/>
+  <div class="cubestage" id=cube>
+  <div class="cube innercube">
+    <div class="face one"></div>
+    <div class="face three"></div>
+    <div class="face four"></div>
+    <div class="face five"></div>
+    <div class="face six"></div>
+  </div>
+  <div class="cube logocube">
+    <div class="face one"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M166.737 7.247l-32.073.076-.253 74.515 8.42-.021.099-28.945 21.302-.053 21.529 28.897 10.342-.025-22.81-30.383c11.739-2.152 20.288-9.423 20.33-21.882.047-13.401-10.472-22.219-26.886-22.179zm-59.241.14l-8.42.018-.255 74.518 8.42-.021.255-74.515zm-71.93.17l-25.88.062-.255 74.518 25.88-.062c23.446-.055 39.692-16.375 39.765-37.455.071-21.081-16.065-37.117-39.51-37.062zm130.51 7.469c12.04-.026 19.053 5.493 19.021 14.746-.033 9.684-8.044 15.461-19.228 15.488l-22.913.053.103-30.231 23.017-.055zm-130.535.312c18.867-.044 30.86 12.901 30.803 29.508-.056 16.624-12.14 29.42-31.005 29.464l-17.46.041.2-58.97 17.462-.044zm23.997 78.931c-28.264.068-49.263 21.42-49.354 48.585v.276c-.095 27.831 21.306 48.157 47.96 48.093 20.65-.049 32.533-9.006 41.372-21.145l-19.403-13.798c-5.63 6.799-11.373 11.337-21.099 11.359-13.052.031-22.208-10.863-22.16-24.847v-.257c.046-13.59 9.278-24.667 22.33-24.698 8.936-.022 15.043 4.23 20.353 10.886l19.501-15.095c-8.21-11.444-20.446-19.403-39.501-19.359zm132.983 1.552l-26.257.062-.179 52.461c-.047 13.06-6.856 19.193-17.251 19.219-10.392.024-17.182-6.352-17.136-19.804l.177-51.792-26.241.062-.179 52.339c-.1 29.154 16.509 42.566 43.023 42.504 26.517-.065 43.765-13.282 43.868-43.377l.175-51.673z"/></svg></div>
+    <div class="face two"></div>
+    <div class="face three"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M117.08 6.9l.181 54.853 7.694.018-.152-46.371 26.206.069.131 40.993 7.699.021-.135-40.996 25.568.064.149 45.832 7.694.021v-.003l-.175-54.314-74.862-.188zm-107.828.161l.158 48.461c.071 22.422 9.895 35.613 25.94 35.653h.276c12.708.033 19.103-7.207 22.803-18.617 3.643 8.336 10.086 14.539 20.913 14.565h.278c6.421.013 11.354-2.252 15.095-6.009 5.474-5.497 8.375-13.799 8.337-25.616l-.156-48.197-93.645-.239zm20.966 25.432l17.253.044.062 19.866c.03 8.725-3.3 12.741-8.397 12.728h-.255c-5.491-.011-8.575-4.582-8.597-12.493l-.067-20.144zm35.451.087l16.441.041.055 16.914c.028 7.794-2.904 11.812-7.984 11.798h-.257c-5.493-.011-8.175-4.461-8.202-12.374l-.053-16.376v-.003zm88.921 31.2c-21.607-.054-38.561 15.885-38.493 37.565.046 13.631 5.323 22.229 13.253 30.094l5.437-5.568c-6.858-7.221-10.842-13.985-10.875-24.282-.055-16.533 13.491-29.056 30.913-29.014 17.44.044 30.845 12.531 30.9 29.168.033 10.194-4.215 17.267-10.186 23.575l6.218 5.821c7.035-7.498 11.825-15.641 11.782-29.272-.071-22.113-17.562-38.031-38.95-38.087zm-144.994 49.994l.25 76.258 22.071.055-.165-50.481 14.861.039.145 45.106 20.475.053-.147-45.108 14.167.035.163 49.808 22.071.053-.246-75.583-93.645-.234zm174.957 18.668l.08 25.223-67.062-.17.028 8.585 67.062.17.083 25.205 7.798.018-.191-59.014-7.798-.018z"/></svg></div>
+    <div class="face four"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M166.737 7.247l-32.073.076-.253 74.515 8.42-.021.099-28.945 21.302-.053 21.529 28.897 10.342-.025-22.81-30.383c11.739-2.152 20.288-9.423 20.33-21.882.047-13.401-10.472-22.219-26.886-22.179zm-59.241.14l-8.42.018-.255 74.518 8.42-.021.255-74.515zm-71.93.17l-25.88.062-.255 74.518 25.88-.062c23.446-.055 39.692-16.375 39.765-37.455.071-21.081-16.065-37.117-39.51-37.062zm130.51 7.469c12.04-.026 19.053 5.493 19.021 14.746-.033 9.684-8.044 15.461-19.228 15.488l-22.913.053.103-30.231 23.017-.055zm-130.535.312c18.867-.044 30.86 12.901 30.803 29.508-.056 16.624-12.14 29.42-31.005 29.464l-17.46.041.2-58.97 17.462-.044zm23.997 78.931c-28.264.068-49.263 21.42-49.354 48.585v.276c-.095 27.831 21.306 48.157 47.96 48.093 20.65-.049 32.533-9.006 41.372-21.145l-19.403-13.798c-5.63 6.799-11.373 11.337-21.099 11.359-13.052.031-22.208-10.863-22.16-24.847v-.257c.046-13.59 9.278-24.667 22.33-24.698 8.936-.022 15.043 4.23 20.353 10.886l19.501-15.095c-8.21-11.444-20.446-19.403-39.501-19.359zm132.983 1.552l-26.257.062-.179 52.461c-.047 13.06-6.856 19.193-17.251 19.219-10.392.024-17.182-6.352-17.136-19.804l.177-51.792-26.241.062-.179 52.339c-.1 29.154 16.509 42.566 43.023 42.504 26.517-.065 43.765-13.282 43.868-43.377l.175-51.673z"/></svg></div>
+    <div class="face five"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M117.08 6.9l.181 54.853 7.694.018-.152-46.371 26.206.069.131 40.993 7.699.021-.135-40.996 25.568.064.149 45.832 7.694.021v-.003l-.175-54.314-74.862-.188zm-107.828.161l.158 48.461c.071 22.422 9.895 35.613 25.94 35.653h.276c12.708.033 19.103-7.207 22.803-18.617 3.643 8.336 10.086 14.539 20.913 14.565h.278c6.421.013 11.354-2.252 15.095-6.009 5.474-5.497 8.375-13.799 8.337-25.616l-.156-48.197-93.645-.239zm20.966 25.432l17.253.044.062 19.866c.03 8.725-3.3 12.741-8.397 12.728h-.255c-5.491-.011-8.575-4.582-8.597-12.493l-.067-20.144zm35.451.087l16.441.041.055 16.914c.028 7.794-2.904 11.812-7.984 11.798h-.257c-5.493-.011-8.175-4.461-8.202-12.374l-.053-16.376v-.003zm88.921 31.2c-21.607-.054-38.561 15.885-38.493 37.565.046 13.631 5.323 22.229 13.253 30.094l5.437-5.568c-6.858-7.221-10.842-13.985-10.875-24.282-.055-16.533 13.491-29.056 30.913-29.014 17.44.044 30.845 12.531 30.9 29.168.033 10.194-4.215 17.267-10.186 23.575l6.218 5.821c7.035-7.498 11.825-15.641 11.782-29.272-.071-22.113-17.562-38.031-38.95-38.087zm-144.994 49.994l.25 76.258 22.071.055-.165-50.481 14.861.039.145 45.106 20.475.053-.147-45.108 14.167.035.163 49.808 22.071.053-.246-75.583-93.645-.234zm174.957 18.668l.08 25.223-67.062-.17.028 8.585 67.062.17.083 25.205 7.798.018-.191-59.014-7.798-.018z"/></svg></div>
+    <div class="face six"></div>
+  </div>
+</div>
+</div>
+
+<div class=content>
+<p class="title"><span>Entreposage Mobile</span></p>
+<!--hr-->
+<p class="title"><span>Mobile Storage</span></p>
+<p class="title big"><span>888 883-6137</span></p>
+</div>
+
+</div>
+
+
+<div class="bigspacer"></div>
+<img id="banner" src="http://direct-cube.com/banner.png"/>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+  <script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout-6c99970ade81e43be51fa877be0f7600.js"></script>
+
+    <script src="http://assets.codepen.io/assets/libs/traceur-runtime-11b88a882417b1783c68bc6fc3253817.js"></script>
+
+  <script>
+  if (!document.getElementsByClassName) {
+  document.getElementsByClassName = function(search) {
+    var d = document, elements, pattern, i, results = [];
+    if (d.querySelectorAll) { // IE8
+      return d.querySelectorAll("." + search);
+    }
+    if (d.evaluate) { // IE6, IE7
+      pattern = ".//*[contains(concat(' ', @class, ' '), ' " + search + " ')]";
+      elements = d.evaluate(pattern, d, null, 0, null);
+      while ((i = elements.iterateNext())) {
+        results.push(i);
+      }
+    } else {
+      elements = d.getElementsByTagName("*");
+      pattern = new RegExp("(^|\\s)" + search + "(\\s|$)");
+      for (i = 0; i < elements.length; i++) {
+        if ( pattern.test(elements[i].className) ) {
+          results.push(elements[i]);
+        }
+      }
+    }
+    return results;
+  }
+}
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+var cube = document.getElementsByClassName("cubestage")[0];
+var bla = 360;
+var anim = function() {
+  bla -= 1;
+  bla %= 360;
+  cube.style.webkitTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
+  cube.style.mozTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
+  cube.style.transform = "rotateX(-25deg) rotateY(" + bla + "deg)";
+  window.requestAnimationFrame(anim);
+};
+anim();
+var test3D = function() {
+  var element = document.createElement('link'),
+      body = document.getElementsByTagName('HEAD')[0],
+      propertys = {
+        'webkitTransformStyle': '-webkit-transform-style',
+        'MozTransformStyle': '-moz-transform-style',
+        'msTransformStyle': '-ms-transform-style',
+        'transformStyle': 'transform-style'
+      };
+  body.insertBefore(element, null);
+  for (var i in propertys) {
+    if (element.style[i] !== undefined) {
+      element.style[i] = "preserve-3d";
+    }
+  }
+  if (!window.getComputedStyle) {
+    window.getComputedStyle = function(el, pseudo) {
+      this.el = el;
+      this.getPropertyValue = function(prop) {
+        var re = /(\-([a-z]){1})/g;
+        if (prop == 'float')
+          prop = 'styleFloat';
+        if (re.test(prop)) {
+          prop = prop.replace(re, function() {
+            return arguments[2].toUpperCase();
+          });
+        }
+        return el.currentStyle[prop] ? el.currentStyle[prop] : null;
+      };
+      return this;
+    };
+  }
+  var st = window.getComputedStyle(element, null),
+      transform = st.getPropertyValue("-webkit-transform-style") || st.getPropertyValue("-moz-transform-style") || st.getPropertyValue("-ms-transform-style") || st.getPropertyValue("transform-style");
+  if (transform !== 'preserve-3d') {
+    element.parentNode.removeChild(element);
+    return false;
+  }
+  element.parentNode.removeChild(element);
+  return true;
+};
+if (!test3D()) {
+  document.getElementById("cube").style.display = "none";
+  document.getElementById("ielogo").style.display = "block";
+}
+    //@ sourceURL=pen.js
+  </script>
+
+</body>
+
+</html>
+

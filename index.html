@@ -1,187 +1,177 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]>
-<html class=ie>
-<![endif]-->
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <title>DIRECT CUBE</title>
-
-  <link rel=stylesheet href=style.css>
-
-  <script>
-    window.console = window.console || function(t) {};
-    window.open = function(){ console.log('window.open is disabled.'); };
-    window.print = function(){ console.log('window.print is disabled.'); };
-    // Support hover state for mobile.
-    if (false) {
-      window.ontouchstart = function(){};
-    }
-  </script>
-
-</head>
-
-<body>
-
-<meta name="viewport" content="width=device-width">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-<img id=bg src="compressed.jpg">
-<div class=pagewrap>
-<div class="view"><img id="ielogo" src="http://direct-cube.com/ielogo.png" style="display:none"/>
-  <div class="cubestage" id=cube>
-  <div class="cube innercube">
-    <div class="face one"></div>
-    <div class="face three"></div>
-    <div class="face four"></div>
-    <div class="face five"></div>
-    <div class="face six"></div>
-  </div>
-  <div class="cube logocube">
-    <div class="face one"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M166.737 7.247l-32.073.076-.253 74.515 8.42-.021.099-28.945 21.302-.053 21.529 28.897 10.342-.025-22.81-30.383c11.739-2.152 20.288-9.423 20.33-21.882.047-13.401-10.472-22.219-26.886-22.179zm-59.241.14l-8.42.018-.255 74.518 8.42-.021.255-74.515zm-71.93.17l-25.88.062-.255 74.518 25.88-.062c23.446-.055 39.692-16.375 39.765-37.455.071-21.081-16.065-37.117-39.51-37.062zm130.51 7.469c12.04-.026 19.053 5.493 19.021 14.746-.033 9.684-8.044 15.461-19.228 15.488l-22.913.053.103-30.231 23.017-.055zm-130.535.312c18.867-.044 30.86 12.901 30.803 29.508-.056 16.624-12.14 29.42-31.005 29.464l-17.46.041.2-58.97 17.462-.044zm23.997 78.931c-28.264.068-49.263 21.42-49.354 48.585v.276c-.095 27.831 21.306 48.157 47.96 48.093 20.65-.049 32.533-9.006 41.372-21.145l-19.403-13.798c-5.63 6.799-11.373 11.337-21.099 11.359-13.052.031-22.208-10.863-22.16-24.847v-.257c.046-13.59 9.278-24.667 22.33-24.698 8.936-.022 15.043 4.23 20.353 10.886l19.501-15.095c-8.21-11.444-20.446-19.403-39.501-19.359zm132.983 1.552l-26.257.062-.179 52.461c-.047 13.06-6.856 19.193-17.251 19.219-10.392.024-17.182-6.352-17.136-19.804l.177-51.792-26.241.062-.179 52.339c-.1 29.154 16.509 42.566 43.023 42.504 26.517-.065 43.765-13.282 43.868-43.377l.175-51.673z"/></svg></div>
-    <div class="face two"></div>
-    <div class="face three"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M117.08 6.9l.181 54.853 7.694.018-.152-46.371 26.206.069.131 40.993 7.699.021-.135-40.996 25.568.064.149 45.832 7.694.021v-.003l-.175-54.314-74.862-.188zm-107.828.161l.158 48.461c.071 22.422 9.895 35.613 25.94 35.653h.276c12.708.033 19.103-7.207 22.803-18.617 3.643 8.336 10.086 14.539 20.913 14.565h.278c6.421.013 11.354-2.252 15.095-6.009 5.474-5.497 8.375-13.799 8.337-25.616l-.156-48.197-93.645-.239zm20.966 25.432l17.253.044.062 19.866c.03 8.725-3.3 12.741-8.397 12.728h-.255c-5.491-.011-8.575-4.582-8.597-12.493l-.067-20.144zm35.451.087l16.441.041.055 16.914c.028 7.794-2.904 11.812-7.984 11.798h-.257c-5.493-.011-8.175-4.461-8.202-12.374l-.053-16.376v-.003zm88.921 31.2c-21.607-.054-38.561 15.885-38.493 37.565.046 13.631 5.323 22.229 13.253 30.094l5.437-5.568c-6.858-7.221-10.842-13.985-10.875-24.282-.055-16.533 13.491-29.056 30.913-29.014 17.44.044 30.845 12.531 30.9 29.168.033 10.194-4.215 17.267-10.186 23.575l6.218 5.821c7.035-7.498 11.825-15.641 11.782-29.272-.071-22.113-17.562-38.031-38.95-38.087zm-144.994 49.994l.25 76.258 22.071.055-.165-50.481 14.861.039.145 45.106 20.475.053-.147-45.108 14.167.035.163 49.808 22.071.053-.246-75.583-93.645-.234zm174.957 18.668l.08 25.223-67.062-.17.028 8.585 67.062.17.083 25.205 7.798.018-.191-59.014-7.798-.018z"/></svg></div>
-    <div class="face four"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M166.737 7.247l-32.073.076-.253 74.515 8.42-.021.099-28.945 21.302-.053 21.529 28.897 10.342-.025-22.81-30.383c11.739-2.152 20.288-9.423 20.33-21.882.047-13.401-10.472-22.219-26.886-22.179zm-59.241.14l-8.42.018-.255 74.518 8.42-.021.255-74.515zm-71.93.17l-25.88.062-.255 74.518 25.88-.062c23.446-.055 39.692-16.375 39.765-37.455.071-21.081-16.065-37.117-39.51-37.062zm130.51 7.469c12.04-.026 19.053 5.493 19.021 14.746-.033 9.684-8.044 15.461-19.228 15.488l-22.913.053.103-30.231 23.017-.055zm-130.535.312c18.867-.044 30.86 12.901 30.803 29.508-.056 16.624-12.14 29.42-31.005 29.464l-17.46.041.2-58.97 17.462-.044zm23.997 78.931c-28.264.068-49.263 21.42-49.354 48.585v.276c-.095 27.831 21.306 48.157 47.96 48.093 20.65-.049 32.533-9.006 41.372-21.145l-19.403-13.798c-5.63 6.799-11.373 11.337-21.099 11.359-13.052.031-22.208-10.863-22.16-24.847v-.257c.046-13.59 9.278-24.667 22.33-24.698 8.936-.022 15.043 4.23 20.353 10.886l19.501-15.095c-8.21-11.444-20.446-19.403-39.501-19.359zm132.983 1.552l-26.257.062-.179 52.461c-.047 13.06-6.856 19.193-17.251 19.219-10.392.024-17.182-6.352-17.136-19.804l.177-51.792-26.241.062-.179 52.339c-.1 29.154 16.509 42.566 43.023 42.504 26.517-.065 43.765-13.282 43.868-43.377l.175-51.673z"/></svg></div>
-    <div class="face five"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M117.08 6.9l.181 54.853 7.694.018-.152-46.371 26.206.069.131 40.993 7.699.021-.135-40.996 25.568.064.149 45.832 7.694.021v-.003l-.175-54.314-74.862-.188zm-107.828.161l.158 48.461c.071 22.422 9.895 35.613 25.94 35.653h.276c12.708.033 19.103-7.207 22.803-18.617 3.643 8.336 10.086 14.539 20.913 14.565h.278c6.421.013 11.354-2.252 15.095-6.009 5.474-5.497 8.375-13.799 8.337-25.616l-.156-48.197-93.645-.239zm20.966 25.432l17.253.044.062 19.866c.03 8.725-3.3 12.741-8.397 12.728h-.255c-5.491-.011-8.575-4.582-8.597-12.493l-.067-20.144zm35.451.087l16.441.041.055 16.914c.028 7.794-2.904 11.812-7.984 11.798h-.257c-5.493-.011-8.175-4.461-8.202-12.374l-.053-16.376v-.003zm88.921 31.2c-21.607-.054-38.561 15.885-38.493 37.565.046 13.631 5.323 22.229 13.253 30.094l5.437-5.568c-6.858-7.221-10.842-13.985-10.875-24.282-.055-16.533 13.491-29.056 30.913-29.014 17.44.044 30.845 12.531 30.9 29.168.033 10.194-4.215 17.267-10.186 23.575l6.218 5.821c7.035-7.498 11.825-15.641 11.782-29.272-.071-22.113-17.562-38.031-38.95-38.087zm-144.994 49.994l.25 76.258 22.071.055-.165-50.481 14.861.039.145 45.106 20.475.053-.147-45.108 14.167.035.163 49.808 22.071.053-.246-75.583-93.645-.234zm174.957 18.668l.08 25.223-67.062-.17.028 8.585 67.062.17.083 25.205 7.798.018-.191-59.014-7.798-.018z"/></svg></div>
-    <div class="face six"></div>
+<!DOCTYPE html><meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="chrome=1"><!--ie stuff-->
+<meta name=viewport content="width=device-width">
+<!--
+|  _________________________________________
+| |                                         |
+| | Want to improve the code of             |
+| | this website or report a bug?           |
+| | Go to: github.com/williammalo/signshop  |
+| |___  ____________________________________|
+|     |/
+|  __  __   _   _    _____      _____ ___       ___ ___  __  __ 
+| |  \/  | /_\ | |  / _ \ \    / / __| _ )     / __/ _ \|  \/  |
+| | |\/| |/ _ \| |_| (_) \ \/\/ /| _|| _ \  _ | (_| (_) | |\/| |
+| |_|  |_/_/ \_\____\___/ \_/\_/ |___|___/ (_) \___\___/|_|  |_|
+| maloweb.com
+| 
+|
+-->
+<title>DIRECT CUBE</title>
+<meta name="description" content="blah"><link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
+<link rel="stylesheet" href="foo.css">
+<div class="row color">
+  <div class="pad third"> <img src="logo.svg" onerror="this.src='logo.png'" class="logo"></div>
+  <div class="pad two-thirds">
+    <h1>Entreposage Mobile</h1>
   </div>
 </div>
+<div class="pad row center">
+  <row class="pad">
+    <h3 class="long">Direct cube se spécialise dans la location de Cube ou de bac en plastique.</h3>
+    <p class="long">Nous offrons une solution simple, économique et sans tracas pour l’entreposage de vos bien ou pour un déménagement.</p>
+    <p><strong>Montreal * Québec * Sherbrooke * Ottawa * Calgary * Edmonton * etc.</strong></p>
+  </row>
 </div>
-
-<div class=content>
-<p class="title"><span>Entreposage Mobile</span></p>
-<!--hr-->
-<p class="title"><span>Mobile Storage</span></p>
-<p class="title big"><span>888 883-6137</span></p>
+<div class="pad row">
+  <div class="pad third"><img src="livraison.png" width="108" style="margin-top:0" class="headerimg">
+    <h2>Livré Chez Vous</h2>
+    <p>Nous déposons les Cubes à l’aide de notre chariot élévateur à l’endroit désiré.  Vous avez tout votre temps pour les remplir facilement et sans stress… Une fois terminé, vous nous contacté et nous irons le récupérer.</p>
+  </div>
+  <div class="pad third"><img src="entreposage.png" width="132" style="margin-top:5px" class="headerimg">
+    <h2>Entreposé Chez Nous</h2>
+    <p>Nous entreposons votre cube dans notre entrepôt chauffé et sécurisé pour la période de temps qui vous convient.  Vos cubes sont accessibles, sur rendez-vous (48hrs à l’avance),  durant les heures d’ouverture.</p>
+  </div>
+  <div class="pad third"><img src="expedition.png" width="136" style="margin-top:28px" class="headerimg">
+    <h2>Livré n'importe&nbsp;où</h2>
+    <p>Nous livrons vos cubes à votre nouvel emplacement, et ce à travers le Canada et certains États Américains.</p>
+  </div>
 </div>
-
+<div class="pad row">
+  <div class="pad half">
+    <h2>L’avantage Direct Cube</h2>Réduisez de moitié la manipulation que vous devez effectuer par rapport à un mini entrepôt.
+    <ul>
+      <li>Prenez le temps nécessaire pour remplir et vider votre cube.</li>
+      <li>Travail au niveau du sol, pas besoin de monter les objets lourds dans un camion.</li>
+      <li>Finit la location de camion et l’emprunt de véhicule réduisant le risque d’accident et de bris.</li>
+    </ul>
+  </div>
 </div>
-
-
-<div class="bigspacer"></div>
-<img id="banner" src="http://direct-cube.com/banner.png"/>
-
-  <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage('resize', "*");
-    }
-  </script>
-
-  <script src="http://assets.codepen.io/assets/common/stopExecutionOnTimeout-6c99970ade81e43be51fa877be0f7600.js"></script>
-
-    <script src="http://assets.codepen.io/assets/libs/traceur-runtime-11b88a882417b1783c68bc6fc3253817.js"></script>
-
-  <script>
-  if (!document.getElementsByClassName) {
-  document.getElementsByClassName = function(search) {
-    var d = document, elements, pattern, i, results = [];
-    if (d.querySelectorAll) { // IE8
-      return d.querySelectorAll("." + search);
-    }
-    if (d.evaluate) { // IE6, IE7
-      pattern = ".//*[contains(concat(' ', @class, ' '), ' " + search + " ')]";
-      elements = d.evaluate(pattern, d, null, 0, null);
-      while ((i = elements.iterateNext())) {
-        results.push(i);
-      }
-    } else {
-      elements = d.getElementsByTagName("*");
-      pattern = new RegExp("(^|\\s)" + search + "(\\s|$)");
-      for (i = 0; i < elements.length; i++) {
-        if ( pattern.test(elements[i].className) ) {
-          results.push(elements[i]);
-        }
-      }
-    }
-    return results;
-  }
-}
-(function() {
-    var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
-                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
-    }
- 
-    if (!window.requestAnimationFrame)
-        window.requestAnimationFrame = function(callback, element) {
-            var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
-              timeToCall);
-            lastTime = currTime + timeToCall;
-            return id;
-        };
- 
-    if (!window.cancelAnimationFrame)
-        window.cancelAnimationFrame = function(id) {
-            clearTimeout(id);
-        };
-}());
-
-var cube = document.getElementsByClassName("cubestage")[0];
-var bla = 360;
-var anim = function() {
-  bla -= 1;
-  bla %= 360;
-  cube.style.webkitTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
-  cube.style.mozTransform = "rotateX(-25deg) rotateY(" + bla + "deg)";
-  cube.style.transform = "rotateX(-25deg) rotateY(" + bla + "deg)";
-  window.requestAnimationFrame(anim);
-};
-anim();
-var test3D = function() {
-  var element = document.createElement('link'),
-      body = document.getElementsByTagName('HEAD')[0],
-      propertys = {
-        'webkitTransformStyle': '-webkit-transform-style',
-        'MozTransformStyle': '-moz-transform-style',
-        'msTransformStyle': '-ms-transform-style',
-        'transformStyle': 'transform-style'
-      };
-  body.insertBefore(element, null);
-  for (var i in propertys) {
-    if (element.style[i] !== undefined) {
-      element.style[i] = "preserve-3d";
-    }
-  }
-  if (!window.getComputedStyle) {
-    window.getComputedStyle = function(el, pseudo) {
-      this.el = el;
-      this.getPropertyValue = function(prop) {
-        var re = /(\-([a-z]){1})/g;
-        if (prop == 'float')
-          prop = 'styleFloat';
-        if (re.test(prop)) {
-          prop = prop.replace(re, function() {
-            return arguments[2].toUpperCase();
-          });
-        }
-        return el.currentStyle[prop] ? el.currentStyle[prop] : null;
-      };
-      return this;
-    };
-  }
-  var st = window.getComputedStyle(element, null),
-      transform = st.getPropertyValue("-webkit-transform-style") || st.getPropertyValue("-moz-transform-style") || st.getPropertyValue("-ms-transform-style") || st.getPropertyValue("transform-style");
-  if (transform !== 'preserve-3d') {
-    element.parentNode.removeChild(element);
-    return false;
-  }
-  element.parentNode.removeChild(element);
-  return true;
-};
-if (!test3D()) {
-  document.getElementById("cube").style.display = "none";
-  document.getElementById("ielogo").style.display = "block";
-}
-    //@ sourceURL=pen.js
-  </script>
-
-</body>
-
-</html>
-
+<div class="pad row">
+  <div class="pad third"><img src="place1.jpg" height="150px" class="headerimg">
+    <h2>Cubes</h2>
+    <p>Nous livrons les cubes à votre domicile ou à votre entreprise pour vous permettre de les remplir à votre rythme.  Par la suite, nous récupérons les cubes pour les entreposer dans notre entrepôt chauffé et sécurisé ou nous vous les livrons à votre nouvel emplacement. Dimension : 5’ x 8’ x 7’ haut</p>
+  </div>
+  <div class="pad third"><img src="place2.jpg" height="150px" class="headerimg">
+    <h2>Bacs en plastique</h2>
+    <p>Nous vous proposons la location de bac en plastique, afin de facilité votre déménagement ou entreposage.  Écologique, pratique, empilable et robuste ces boites sont l’outil indispensable pour maximiser l’espace intérieur de votre conteneur et protéger vos biens. Dimension : 27’’ x 17’’ x 17’’ haut</p>
+  </div>
+  <div class="pad third"><img src="place3.png" height="150px" class="headerimg">
+    <h2>Les indispensables</h2>
+    <p>À notre local, vous trouverez un assortiment d’articles nécessaires pour faciliter et rendre votre déménagement sécuritaire.  Il vous suffit de passer votre commande et nous les ajouterons dans votre cube lors de la livraison.</p>
+  </div>
+</div>
+<div class="row pad">
+  <div class="pad third">
+    <h2>Contact</h2>
+    <p>888 883-6137<br><a href="mailto:info@direct-cube.com">info@direct-cube.com</a></p>
+    <p>312, St-Francois Xavier <br>Delson, Québec, Canada<br>J5B 1Y1</p>
+  </div>
+  <div class="pad third"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.9018356604893!2d-73.53537619999999!3d45.3709759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc90db74e4c2f5b%3A0x5315708febb34abf!2s312+Chemin+St+Fran%C3%A7ois+Xavier%2C+Delson%2C+QC+J5B+1Y1%2C+Canada!5e0!3m2!1sen!2sca!4v1424345876497"></iframe></div>
+  <!--.pad.third
+  h2 Commande en Ligne
+  button Formulaire
+  button Courriel
+  
+  -->
+</div>
+<div class="row pad">
+  <div class="pad two-thirds wide-content">
+    <h2>location d'entrepôt</h2>
+    <p>(au mois)</p>
+    <div class="scroller">
+      <table>
+        <tr>
+          <td class="light"></td>
+          <td class="em">1 cube</td>
+          <td class="em">2 cubes</td>
+          <td class="em">3 cubes</td>
+          <td class="em">4 cubes</td>
+          <td class="em">5 cubes</td>
+          <td class="em">6 cubes</td>
+          <td class="em">7 cubes</td>
+        </tr>
+        <tr>
+          <td class="em">1 à 3 mois</td>
+          <td>89.99</td>
+          <td>159.99</td>
+          <td>239.99</td>
+          <td>319.99</td>
+          <td>399.99</td>
+          <td>479.99</td>
+          <td>559.99</td>
+        </tr>
+        <tr>
+          <td class="em">3 à 9 mois</td>
+          <td>84.99</td>
+          <td>149.99</td>
+          <td>224.99</td>
+          <td>299.99</td>
+          <td>374.99</td>
+          <td>449.99</td>
+          <td>524.99</td>
+        </tr>
+        <tr>
+          <td class="em">9 mois +</td>
+          <td>79.99</td>
+          <td>139.99</td>
+          <td>209.99</td>
+          <td>279.99</td>
+          <td>349.99</td>
+          <td>419.99</td>
+          <td>489.99</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="pad third">
+    <h2>Prix de transport</h2>
+    <p>aller/retour dans un rayon de 25 km de Montréal</p>
+    <table>
+      <tr>
+        <td class="light"></td>
+        <td class="em">prix</td>
+      </tr>
+      <tr>
+        <td class="em">1 cube</td>
+        <td>69.99</td>
+      </tr>
+      <tr>
+        <td class="em">2 cube</td>
+        <td>119.99</td>
+      </tr>
+      <tr>
+        <td class="em">3 cube</td>
+        <td>139.99</td>
+      </tr>
+      <tr>
+        <td class="em">4 cube</td>
+        <td>159.99</td>
+      </tr>
+      <tr>
+        <td class="em">5 cube</td>
+        <td>179.99</td>
+      </tr>
+      <tr>
+        <td class="em">6 cube</td>
+        <td>199.99</td>
+      </tr>
+    </table>
+  </div>
+</div><img src="fancy.png" class="bottom">
+<!--nav
+a Foo
+a Bar
+a Lorem
+a Ipsum
+-->
